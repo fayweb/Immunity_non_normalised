@@ -476,8 +476,8 @@ fitWL_Sex <- parasiteLoad::analyse(data = Field_tol,
 
 
 plot_WL_Sex<- bananaPlot(mod = fitWL_Sex$H3,
-             data = Field,
-             response = "WL",
+             data = Field_tol,
+             response = "tolerance",
              group = "Sex") +
     scale_fill_manual(values = c("blueviolet", "limegreen")) +
   scale_color_manual(values = c("blueviolet", "limegreen")) +
